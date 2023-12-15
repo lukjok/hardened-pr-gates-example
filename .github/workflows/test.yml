@@ -28,6 +28,6 @@ jobs:
       - run: printenv EXAMPLE
         env:
           EXAMPLE: ${{ secrets.EXTERNAL_SECRET }}
-      - run: printenv INTERNAL_SECRET
+      - run: printenv EXAMPLE
         env:
           EXAMPLE: ${{ secrets.INTERNAL_SECRET }}

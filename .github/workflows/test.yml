@@ -27,7 +27,4 @@ jobs:
           persist-credentials: 'false' #By default, actions/checkout persists GIT credentials, we do not need this
       - run: printenv EXAMPLE
         env:
-          EXAMPLE: ${{ secrets.EXTERNAL_SECRET }}
-      - run: printenv EXAMPLE
-        env:
-          EXAMPLE: ${{ secrets.INTERNAL_SECRET }}
+          EXAMPLE: ${{ secrets.SIMPLE_SECRET }}
